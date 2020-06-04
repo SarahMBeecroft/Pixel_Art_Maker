@@ -76,12 +76,6 @@ form {
   -webkit-text-fill-color: transparent;
 }
 
-#colorText2 {
-  background: -webkit-linear-gradient(rgb(0, 10, 100), rgb(248, 248, 248));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 #submitButton {
   background: -webkit-linear-gradient(rgb(0, 255, 13), rgb(248, 248, 248));
   -webkit-background-clip: text;
@@ -96,4 +90,8 @@ form {
 
 #submitButton:hover {
   border: solid hotpink 2px;
+}
+
+#pixelCanvas {
+  background: white;
 }
