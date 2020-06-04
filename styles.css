@@ -6,13 +6,13 @@
 body {
   text-align: center;
   font-family: 'pixeled';
-  font-size: 1.2em;
+  font-size: 0.9em;
   background: rgb(0, 0, 0);
 }
 
 h1 {
   font-size: 3em;
-  margin: 0.2em;
+  margin: 0.1em;
   background: -webkit-linear-gradient(rgb(131, 0, 76), rgb(248, 248, 248));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -25,7 +25,7 @@ h2 {
   display: inline-block;
   position: relative;
   top: 0.2em;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 h2:first-of-type {
@@ -56,6 +56,7 @@ input[type='number'] {
   height: 1.5em;
   position: relative;
   bottom: 0.5em;
+  margin-right: 0.5em;
 }
 
 input:value {
@@ -83,12 +84,28 @@ form {
   font-family: 'pixeled';
   text-transform: lowercase;
   border: solid white 2px;
-  padding: 0em 1.5em 0.5em 1.5em;
+  padding: 0em 1.2em 0.5em 1.2em;
   position: relative;
   bottom: 0.5em;
 }
 
 #submitButton:hover {
+  border: solid hotpink 2px;
+}
+
+#clearButton {
+  background: -webkit-linear-gradient(rgb(0, 255, 13), rgb(248, 248, 248));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'pixeled';
+  text-transform: lowercase;
+  border: solid white 2px;
+  padding: 0em 1.2em 0.5em 1.2em;
+  position: relative;
+  bottom: 0.5em;
+}
+
+#clearButton:hover {
   border: solid hotpink 2px;
 }
 
