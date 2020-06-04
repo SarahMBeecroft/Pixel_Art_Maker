@@ -1,40 +1,99 @@
+@font-face {
+  src: url(fonts/Pixeled.ttf);
+  font-family: pixeled;
+}
+
 body {
-    text-align: center;
+  text-align: center;
+  font-family: 'pixeled';
+  font-size: 1.2em;
+  background: rgb(0, 0, 0);
 }
 
 h1 {
-    font-family: Monoton;
-    font-size: 70px;
-    margin: 0.2em;
+  font-size: 3em;
+  margin: 0.2em;
+  background: -webkit-linear-gradient(rgb(131, 0, 76), rgb(248, 248, 248));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2 {
-    margin: 1em 0 0.25em;
+  background: -webkit-linear-gradient(rgb(0, 10, 100), rgb(248, 248, 248));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  position: relative;
+  top: 0.2em;
+  font-size: 1.3em;
 }
 
 h2:first-of-type {
-    margin-top: 0.5em;
+  margin-top: 0.5em;
 }
 
 table,
 tr,
 td {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 table {
-    border-collapse: collapse;
-    margin: 0 auto;
+  border-collapse: collapse;
+  margin: 0 auto;
 }
 
 tr {
-    height: 20px;
+  height: 20px;
 }
 
 td {
-    width: 20px;
+  width: 20px;
 }
 
-input[type=number] {
-    width: 6em;
+input[type='number'] {
+  width: 6em;
+  height: 1.5em;
+  position: relative;
+  bottom: 0.5em;
+}
+
+input:value {
+  color: red;
+}
+
+form {
+  color: rgb(255, 255, 255);
+}
+
+#inlineBlock {
+  text-align: center;
+}
+
+#colorText {
+  background: -webkit-linear-gradient(rgb(131, 0, 76), rgb(248, 248, 248));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#colorText2 {
+  background: -webkit-linear-gradient(rgb(0, 10, 100), rgb(248, 248, 248));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#submitButton {
+  background: -webkit-linear-gradient(rgb(0, 255, 13), rgb(248, 248, 248));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'pixeled';
+  text-transform: lowercase;
+  border: solid white 2px;
+  padding: 0em 1.5em 0.5em 1.5em;
+  position: relative;
+  bottom: 0.5em;
+}
+
+#submitButton:hover {
+  border: solid hotpink 2px;
 }
