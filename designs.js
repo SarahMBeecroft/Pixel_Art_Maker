@@ -3,6 +3,7 @@ let canvas = document.getElementById('pixelCanvas');
 let height = document.getElementById('inputHeight');
 let width = document.getElementById('inputWidth');
 let sizePicker = document.getElementById('sizePicker');
+let eraseButton = document.getElementById('eraseButton');
 let color = document.getElementById('colorPicker');
 
 // Select color input
