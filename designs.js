@@ -15,7 +15,7 @@ sizePicker.onsubmit = (event) => {
   createGrid();
 };
 
-function createGrid() {
+const createGrid = () => {
   for (let i = 0; i < height.value; i++) {
     const row = canvas.insertRow(i);
     for (let j = 0; j < width.value; j++) {
@@ -23,13 +23,13 @@ function createGrid() {
       cell.addEventListener('click', fillSquare);
     }
   }
-}
+};
 
-function clearGrid() {
+const clearGrid = () => {
   while (canvas.firstChild) {
     canvas.removeChild(canvas.firstChild);
   }
-}
+};
 
 // Function to set background to selected color on canvas
 function fillSquare() {
