@@ -8,20 +8,20 @@ body {
   font-family: 'pixeled';
   font-size: 0.9em;
   background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 h1 {
   font-size: 3em;
   margin: 0.1em;
-  background: -webkit-linear-gradient(rgb(131, 0, 76), rgb(248, 248, 248));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px black;
+  color: black;
+  text-shadow: 3px 3px 0 rgb(207, 24, 161), -1px -1px 0 rgb(207, 24, 161),
+    1px -1px 0 rgb(207, 24, 161), -1px 1px 0 rgb(207, 24, 161),
+    1px 1px 0 rgb(207, 24, 161);
 }
 
 h2 {
-  background: -webkit-linear-gradient(rgb(0, 10, 100), rgb(248, 248, 248));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   display: inline-block;
   position: relative;
   top: 0.2em;
@@ -60,7 +60,7 @@ input[type='number'] {
 }
 
 input:value {
-  color: red;
+  color: rgb(0, 0, 0);
 }
 
 form {
@@ -69,12 +69,6 @@ form {
 
 #inlineBlock {
   text-align: center;
-}
-
-#colorText {
-  background: -webkit-linear-gradient(rgb(131, 0, 76), rgb(248, 248, 248));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 #submitButton {
@@ -90,7 +84,11 @@ form {
 }
 
 #submitButton:hover {
-  border: solid hotpink 2px;
+  border: solid rgb(207, 24, 161) 2px;
+}
+
+#submitButton:active {
+  border: solid rgb(207, 24, 161) 2px;
 }
 
 #clearButton {
@@ -106,7 +104,7 @@ form {
 }
 
 #clearButton:hover {
-  border: solid hotpink 2px;
+  border: solid rgb(207, 24, 161) 2px;
 }
 
 #pixelCanvas {
