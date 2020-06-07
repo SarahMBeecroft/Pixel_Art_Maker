@@ -36,6 +36,7 @@ table,
 tr,
 td {
   border: 1px solid black;
+  background: white;
 }
 
 table {
@@ -85,8 +86,4 @@ form {
 #submitButton:hover {
   border: solid rgb(207, 24, 161) 2px;
   cursor: pointer;
-}
-
-#pixelCanvas {
-  background: white;
 }
