@@ -36,3 +36,10 @@ const clearGrid = () => {
 function fillSquare() {
   this.setAttribute('style', `background-color: ${color.value}`);
 }
+
+// Function to convert canvas to an image
+const convertCanvasToImage = (canvas) => {
+  let image = new Image();
+  image.src = canvas.toDataURL('image/png');
+  return image;
+};
