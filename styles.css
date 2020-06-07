@@ -73,12 +73,8 @@ form {
 
 #submitButton {
   font-family: 'pixeled';
-  background: -webkit-linear-gradient(
-    rgb(0, 255, 13),
-    rgb(248, 248, 248)
-  ) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
+  color: rgb(0, 255, 13);
+  background-color: black;
   text-transform: lowercase;
   border: solid white 2px;
   padding: 0em 1.2em 0.5em 1.2em;
