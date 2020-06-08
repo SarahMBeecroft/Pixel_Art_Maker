@@ -87,3 +87,9 @@ form {
   border: solid rgb(207, 24, 161) 2px;
   cursor: pointer;
 }
+
+.fa-eraser {
+  position: relative;
+  top: 6px;
+  font-size: 36px !important;
+}

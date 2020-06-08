@@ -10,17 +10,19 @@ let color = document.getElementById('colorPicker');
 let popularColors = [];
 
 // Select color input
-// Adds event listener when color is clicked on
+// Adds event listener when color is clicked
 color.addEventListener('click', function() {});
+
+// Adds event listener when eraseButton is clicked
+// eraseButton.addEventListener('click', function() {
+//   this.setAttribute('style', 'color: rgb(0, 255, 13)');
+// });
 
 sizePicker.onsubmit = (event) => {
   event.preventDefault();
   clearGrid();
   createGrid();
 };
-
-let name = 'Sarah';
-console.log(name);
 
 const createGrid = () => {
   for (let i = 0; i < height.value; i++) {
@@ -41,13 +43,14 @@ const clearGrid = () => {
 // Function to set background to selected color on canvas
 function fillSquare() {
   this.setAttribute('style', `background-color: ${color.value}`);
-  popularColors.push(`${color.value}`);
-  console.log(popularColors);
+
+  // popularColors.push(`${color.value}`);
+  // console.log(popularColors);
 }
 
 // Function to convert canvas to an image
-const convertCanvasToImage = (canvas) => {
-  let image = new Image();
-  image.src = canvas.toDataURL('image/png');
-  return image;
-};
+// const convertCanvasToImage = (canvas) => {
+//   let image = new Image();
+//   image.src = canvas.toDataURL('image/png');
+//   return image;
+// };
